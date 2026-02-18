@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ranveer | Ultra Premium Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c1c1c);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+color:white;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+padding:15px 0;
+backdrop-filter:blur(15px);
+background:rgba(255,255,255,0.05);
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:0 20px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00e0ff;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+font-weight:700;
+}
+
+.typing{
+font-size:22px;
+margin-top:15px;
+border-right:3px solid #00e0ff;
+white-space:nowrap;
+overflow:hidden;
+animation:typing 4s steps(30,end), blink 0.8s infinite;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+/* SECTION */
+.section{
+padding:100px 20px;
+display:flex;
+justify-content:center;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:40px;
+border-radius:20px;
+backdrop-filter:blur(20px);
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+max-width:900px;
+width:100%;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* SKILLS */
+.skill{
+margin:20px 0;
+}
+
+.skill-bar{
+background:rgba(255,255,255,0.2);
+border-radius:20px;
+overflow:hidden;
+}
+
+.skill-fill{
+height:12px;
+background:#00e0ff;
+width:0;
+animation:fill 2s forwards;
+}
+
+@keyframes fill{
+to{width:85%;}
+}
+
+/* GALLERY */
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.gallery img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* CONTACT BUTTON */
+button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#00e0ff;
+color:black;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:white;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:25px;
+background:rgba(0,0,0,0.6);
+margin-top:50px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:38px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>Namaste 🙏 I'm Ranveer</h1>
+<div class="typing">Student | Future Software Developer | Tech Enthusiast</div>
+</div>
+
+<div id="about" class="section">
+<div class="card">
+<h2>About Ranveer</h2>
+<br>
+<p>
+Ranveer is an ambitious and forward-thinking student who is passionate about technology and innovation.
+With a strong desire to learn and grow, he continuously works on developing new skills and building real-world projects.
+</p>
+<br>
+<p>
+He believes in hard work, discipline, and staying focused on long-term goals.
+His curiosity and dedication drive him to explore web development and modern digital technologies.
+</p>
+<br>
+<p>
+Ranveer aims to become a skilled software developer and make a positive impact in the digital world.
+He is confident, determined, and committed to building a bright future through knowledge and persistence.
+</p>
+</div>
+</div>
+
+<div id="skills" class="section">
+<div class="card">
+<h2>Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="skill-bar"><div class="skill-fill"></div></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="skill-bar"><div class="skill-fill"></div></div>
+</div>
+
+<div class="skill">
+<p>Problem Solving</p>
+<div class="skill-bar"><div class="skill-fill"></div></div>
+</div>
+
+<div class="skill">
+<p>Web Development</p>
+<div class="skill-bar"><div class="skill-fill"></div></div>
+</div>
+
+</div>
+</div>
+
+<div id="gallery" class="section">
+<div class="card">
+<h2>Gallery</h2>
+<br>
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+</div>
+</div>
+</div>
+
+<div id="contact" class="section">
+<div class="card">
+<h2>Contact</h2>
+<br>
+<p>Email:
+<a href="mailto:ranveerthakur890@gmail.com" style="color:#00e0ff;">
+ranveerthakur890@gmail.com
+</a>
+</p>
+
+<button onclick="alert('Thank you for visiting Ranveer’s Ultra Premium Portfolio!')">
+Say Hello
+</button>
+
+</div>
+</div>
+
+<footer>
+© 2026 Ranveer | Ultra Premium Developer Portfolio
+</footer>
+
+</body>
+</html>
